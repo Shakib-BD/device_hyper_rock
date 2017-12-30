@@ -87,7 +87,7 @@ BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
-include vendor/xiaomi/rock/BoardConfigVendor.mk
+# include vendor/xiaomi/rock/BoardConfigVendor.mk
 
 # Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
@@ -156,3 +156,5 @@ BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)/prebuilts/boot.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 BOARD_KERNEL_SEPARATED_DTBO := true
 endif
+
+
