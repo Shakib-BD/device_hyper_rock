@@ -85,7 +85,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
+# $(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 
 # rro_overlay's dir & files
 PRODUCT_PACKAGES += \
@@ -156,3 +156,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkradioex@1.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
 	vendor.mediatek.hardware.videotelephony@1.0
+
+# VINTF
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
