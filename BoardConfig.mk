@@ -6,8 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/rock
 
-BOARD_USES_RECOVERY_AS_BOOT := true
-
 # A/B
 AB_OTA_UPDATER := true
 
@@ -22,6 +20,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor \
     vendor \
     vendor_boot
+    vbmeta_system
 
 # Architecture
 TARGET_ARCH := arm64
@@ -165,3 +164,5 @@ BOARD_PREBUILT_VENDORIMAGE := $(DEVICE_PATH)/prebuilts/vendor.img
 BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)/prebuilts/boot.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 BOARD_KERNEL_SEPARATED_DTBO := true
+
+# BOARD_USES_RECOVERY_AS_BOOT := true
