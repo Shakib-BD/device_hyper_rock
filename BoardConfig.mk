@@ -6,10 +6,22 @@
 
 DEVICE_PATH := device/xiaomi/rock
 
+BOARD_USES_RECOVERY_AS_BOOT := true
+
 # A/B
 AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS +=
-BOARD_USES_RECOVERY_AS_BOOT := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    vendor \
+    vendor_boot
 
 # Architecture
 TARGET_ARCH := arm64
