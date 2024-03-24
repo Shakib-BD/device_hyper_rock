@@ -153,9 +153,6 @@ PRODUCT_PACKAGES += \
 # IMS
 PRODUCT_PACKAGES += \
     libshim_vtservice \
-    vendor.mediatek.hardware.mtkradioex@1.0 \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-	vendor.mediatek.hardware.videotelephony@1.0
 
 # VINTF
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
